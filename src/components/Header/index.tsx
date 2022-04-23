@@ -36,7 +36,8 @@ function Header() {
           <div>
             <button
               type="button"
-              aria-label="Google Account: Test User (test@user.com)"
+              aria-label="Google Account: Test User (testUser@email.com)"
+              data-tooltip-align="end"
             >
               <img src={userImg} alt="" />
             </button>
