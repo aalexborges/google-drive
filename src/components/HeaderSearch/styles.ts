@@ -16,21 +16,30 @@ export const HSFormContainer = styled.div`
   padding-right: 30px;
 `
 
-export const HSForm = styled.form`
+export const HSForm = styled.form<{ openResults: boolean }>`
   width: 100%;
   height: 100%;
   max-width: 722px;
 
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
+
+  position: relative;
+  transition: background-color 0.1s ease-in-out;
 
   border: 1px solid transparent;
   border-radius: 0.5rem;
   background-color: ${({ theme }) => theme.colors.onWhite};
 
+  &:focus {
+    outline: #4d90fe solid 1px;
+  }
+
   & > input {
     flex: 1;
+    z-index: 2;
 
     color: #000;
     font: normal 1rem 'Noto Sans', 'Roboto', Helvetica, Arial, sans-serif;
@@ -44,6 +53,7 @@ export const HSForm = styled.form`
   & > button {
     height: 100%;
     padding: 0px 5px;
+    z-index: 2;
 
     border: none;
     cursor: pointer;
