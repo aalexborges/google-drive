@@ -43,15 +43,14 @@ function HeaderSearch() {
             onBlur={onBlur}
           />
 
-          {value.length > 0 && (
-            <button
-              type="button"
-              aria-label="Clear search"
-              onClick={clearSearch}
-            >
-              <CloseIcon />
-            </button>
-          )}
+          <button
+            type="button"
+            aria-label="Clear search"
+            disabled={!value}
+            onClick={clearSearch}
+          >
+            <CloseIcon />
+          </button>
 
           <button type="button" aria-label="Search options">
             <SettingsIcon />

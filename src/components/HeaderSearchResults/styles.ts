@@ -21,6 +21,18 @@ export const HSRContent = styled.div`
   flex-direction: column;
 
   border-top: 1px solid ${({ theme }) => theme.colors.divider};
+
+  & > p {
+    padding: 0px 8px 8px 8px;
+
+    color: ${({ theme }) => theme.colors.grey};
+    font: 400 0.875rem/1.5 'Roboto', sans-serif;
+
+    & > span {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
 `
 
 export const HSRMoreResults = styled(ListTile)`

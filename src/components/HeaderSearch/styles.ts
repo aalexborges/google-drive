@@ -60,6 +60,11 @@ export const HSForm = styled.form<{ openResults: boolean }>`
     outline: none;
     background: none;
 
+    &:disabled {
+      opacity: 0;
+      cursor: default;
+    }
+
     & > svg {
       width: 40px;
       height: 40px;
