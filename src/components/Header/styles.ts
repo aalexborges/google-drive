@@ -126,6 +126,7 @@ export const HUserButton = styled.div`
       border: 0;
       cursor: pointer;
       outline: none;
+      user-select: none;
       border-radius: 50%;
       background-color: transparent;
 

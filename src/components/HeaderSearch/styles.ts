@@ -48,6 +48,10 @@ export const HSForm = styled.form<{ openResults: boolean }>`
     border: 0;
     outline: none;
     background-color: transparent;
+
+    &::placeholder {
+      user-select: none;
+    }
   }
 
   & > button {
