@@ -9,11 +9,13 @@ const LeftAsideStorage = memo(function LeftAsideStorage() {
           <div></div>
         </LASHorizontalIndicator>
 
-        <a aria-label="Storage Summary: 7.17 GB of 15 GB used">
+        <a aria-label="Storage Summary: 7.17 GB of 15 GB used" data-no-tooltip>
           7.17 GB of 15 GB used
         </a>
 
-        <LASBuyButton aria-label="Buy storage">Buy storage</LASBuyButton>
+        <LASBuyButton aria-label="Buy storage" data-no-tooltip>
+          Buy storage
+        </LASBuyButton>
       </div>
     </LASContainer>
   )

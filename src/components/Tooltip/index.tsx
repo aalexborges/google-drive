@@ -1,8 +1,8 @@
-import { memo, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Modal from '../Modal'
 import { TContainer } from './styles'
 
-const Tooltip = memo(function Tooltip() {
+function Tooltip() {
   const [value, setValue] = useState('')
   const [position, setPosition] = useState({ x: 0, y: 0 })
   const [direction, setDirection] = useState<'end' | 'start'>()
@@ -12,8 +12,9 @@ const Tooltip = memo(function Tooltip() {
       const element = event.target as HTMLElement
       const label = element.getAttribute('aria-label')
       const direction = element.getAttribute('data-tooltip-align')
+      const noTooltip = element.getAttribute('data-no-tooltip')
 
-      if (!label) return
+      if (!label || noTooltip) return
 
       const { height, width, x, y } = element.getBoundingClientRect()
       let pX = x + width / 2
@@ -71,6 +72,6 @@ const Tooltip = memo(function Tooltip() {
       </TContainer>
     </Modal>
   )
-})
+}
 
 export default Tooltip
