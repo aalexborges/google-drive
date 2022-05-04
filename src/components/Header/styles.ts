@@ -3,9 +3,9 @@ import styled from 'styled-components'
 export const HContainer = styled.header`
   width: 100%;
   padding: 0.5rem;
+  margin-top: -1px;
 
   grid-area: head;
-  margin-top: -1px;
 
   display: flex;
   align-items: center;

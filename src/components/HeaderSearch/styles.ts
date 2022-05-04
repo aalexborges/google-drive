@@ -39,7 +39,7 @@ export const HSForm = styled.form<{ openResults: boolean }>`
 
   & > input {
     flex: 1;
-    z-index: 2;
+    z-index: 3;
 
     color: #000;
     font: normal 1rem 'Noto Sans', 'Roboto', Helvetica, Arial, sans-serif;
@@ -57,7 +57,7 @@ export const HSForm = styled.form<{ openResults: boolean }>`
   & > button {
     height: 100%;
     padding: 0px 5px;
-    z-index: 2;
+    z-index: 3;
 
     border: none;
     cursor: pointer;

@@ -1,4 +1,6 @@
 const colors = {
+  text: '#202124',
+
   grey: '#5f6368',
   grey100: '#3c4043',
   primary: '#1967d2',

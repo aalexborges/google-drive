@@ -3,6 +3,8 @@ import styled from 'styled-components'
 export const LACContainer = styled.aside`
   width: 257px;
 
+  grid-area: lnav;
+
   display: flex;
   flex-direction: column;
 `

@@ -3,6 +3,7 @@ import ListTile from '../ListTile'
 
 export const HSRContainer = styled.div`
   width: 100%;
+  z-index: 2;
   padding-top: 48px;
 
   top: 0px;

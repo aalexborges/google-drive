@@ -7,6 +7,7 @@ import presentationImg from '../../assets/icons/presentation.png'
 import spreadsheetImg from '../../assets/icons/spreadsheet.png'
 import videoImg from '../../assets/icons/video.png'
 import files from '../../data/files.json'
+import getIcon from '../../utils/getIcon'
 import ListTile from '../ListTile'
 import { HSRContainer, HSRContent, HSRMoreResults } from './styles'
 
@@ -35,16 +36,6 @@ function HeaderSearchResults({ value }: IProps) {
       setResults(newResults)
     }
   }, [value])
-
-  const getIcon = (type: string) => {
-    if (type.includes('pdf')) return pdfImg
-    else if (type.includes('image')) return imageImg
-    else if (type.includes('video')) return videoImg
-    else if (type.includes('msword')) return documentsImg
-    else if (type.includes('vnd.ms-excel')) return spreadsheetImg
-    else if (type.includes('vnd.ms-powerpoint')) return presentationImg
-    else return undefined
-  }
 
   if (results === null) {
     return (
