@@ -68,7 +68,7 @@ export const AContentTable = styled.table`
 
   will-change: padding-right;
 
-  & > tr {
+  & tr {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -84,6 +84,8 @@ export const AContentTable = styled.table`
       flex-direction: row;
       justify-content: flex-start;
 
+      transition: width 250ms ease-in-out, flex-basis 250ms ease-in-out;
+
       user-select: none;
       border-bottom: 1px solid #dadce0;
 
@@ -97,6 +99,28 @@ export const AContentTable = styled.table`
 
       &:nth-child(4) {
         flex: 0 0 140px;
+      }
+
+      @media (max-width: 1239px) {
+        &:nth-child(2) {
+          flex: 0 0 140px;
+        }
+
+        &:nth-child(3) {
+          flex: 0 0 144px;
+        }
+      }
+
+      @media (max-width: 1109px) {
+        &:nth-child(4) {
+          display: none;
+        }
+      }
+
+      @media (max-width: 968px) {
+        &:nth-child(2) {
+          display: none;
+        }
       }
     }
 
@@ -113,6 +137,7 @@ export const AContentTable = styled.table`
 
       &:first-of-type {
         padding-left: 0px;
+        overflow: hidden;
 
         font: 500 0.813rem 'Roboto', Helvetica, Arial, sans-serif;
         color: rgba(0, 0, 0, 0.72);
@@ -120,6 +145,7 @@ export const AContentTable = styled.table`
         & > div {
           width: 56px;
           height: 24px;
+          max-width: 56px;
 
           display: flex;
           align-items: center;
@@ -129,6 +155,22 @@ export const AContentTable = styled.table`
             width: 16px;
             height: 16px;
           }
+
+          & > svg {
+            width: 24px;
+            height: 24px;
+          }
+        }
+
+        & > span {
+          flex: 1;
+          color: rgba(0, 0, 0, 0.72);
+          padding-left: 0px;
+          padding-right: 8px;
+
+          overflow: hidden;
+          white-space: pre;
+          text-overflow: ellipsis;
         }
       }
 

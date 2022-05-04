@@ -1,13 +1,5 @@
 [
   {
-    "id": "bcd76e8b-2499-4349-8d4f-785b074dd572",
-    "name": "my-photo",
-    "type": "image/png",
-    "size": 45,
-    "createdBy": "Development User",
-    "updatedAt": 1650916173774
-  },
-  {
     "id": "c72e8cad-1a54-4d4b-abde-eb7063e3194e",
     "name": "clear-code.pdf",
     "type": "application/pdf",
@@ -32,12 +24,12 @@
     "updatedAt": 1650920172228
   },
   {
-    "id": "249b2194-6891-4d6a-988f-b65f81597ed2",
-    "name": "schedule",
-    "type": "application/vnd.ms-excel",
-    "size": 1,
+    "id": "bcd76e8b-2499-4349-8d4f-785b074dd572",
+    "name": "my-photo",
+    "type": "image/png",
+    "size": 45,
     "createdBy": "Development User",
-    "updatedAt": 1650920526075
+    "updatedAt": 1650916173774
   },
   {
     "id": "c75f6abf-10c5-4f04-a8b3-49d98fa8d1b9",
@@ -46,5 +38,13 @@
     "size": 8192,
     "createdBy": "Development User",
     "updatedAt": 1650920675859
+  },
+  {
+    "id": "249b2194-6891-4d6a-988f-b65f81597ed2",
+    "name": "schedule",
+    "type": "application/vnd.ms-excel",
+    "size": 1,
+    "createdBy": "Development User",
+    "updatedAt": 1650920526075
   }
 ]
